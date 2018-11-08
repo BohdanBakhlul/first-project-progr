@@ -61,8 +61,8 @@ class main {
         int[] check = {1, 3, 7, 9, 1, 3, 7, 9, 1, 3};
 
 
-        Date now;
-        now = new Date(); // initialize date
+        //Date now;
+        //now = new Date(); // initialize date
         //System.out.println("Time is :" + now); // Display current time
 
         try
@@ -84,7 +84,7 @@ class main {
                 }
 
                 if (numpesel.length != 11){
-                    System.out.println("Error");
+                    System.out.println("Pesel is too short");
                 } else {
                     int temp = 0;
                     for(int i = 0; i < 10; i ++) {
@@ -95,7 +95,7 @@ class main {
                         temp = 10 - temp;
                     }
                     if (temp != numpesel[10]) {
-                        System.out.println("ERROR");
+                        System.out.println("Pesel is wrong");
                     } else {
 
                         Student myStudent = new Student( city , name, surname , pesel );
@@ -110,7 +110,7 @@ class main {
 
                     }
                 }
-                System.out.println(students.size());
+                //System.out.println(students.size());
 
             }
             // for (int h=0; h < myStudent.length; h++) {

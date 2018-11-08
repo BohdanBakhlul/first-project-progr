@@ -5,12 +5,11 @@ public class Student {
     String surname;
     String pesel;
 
-    public Student (String a, String b, String c, String d) {
+    public Student(String a, String b, String c, String d) {
         city = a;
         name = b;
         surname = c;
         pesel = d;
 
     }
-
 }

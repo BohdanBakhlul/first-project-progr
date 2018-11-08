@@ -8,9 +8,7 @@ public class SimpleJob2 implements org.quartz.Job {
     public void execute(JobExecutionContext context) throws JobExecutionException {
 
         Date[] schedule = new Date[12];
-
         Date now = new Date();
-
         schedule[0] = new Date();
         schedule[0].setHours(8);
         schedule[0].setMinutes(15);
